@@ -5,6 +5,7 @@ Version:	4.1.0
 Release:	1
 License:	MIT
 Group:		X11/XFree86
+Group(de):	X11/XFree86
 Group(pl):	X11/XFree86
 Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X410src-3.tgz
 Buildarch:	noarch
@@ -35,6 +36,7 @@ find . -name \*.txt -exec gzip -9nf {} \;
 cp -ar * $RPM_BUILD_ROOT/%{_docdir}/%{name}-%{version}
 
 %clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
