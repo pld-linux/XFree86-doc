@@ -2,7 +2,7 @@ Summary:	XFree86 Programmers documentation
 Summary(pl):	XFree86 Dokumentacja dla programistów
 Name:		XFree86-doc
 Version:	3.3.3.1
-Release:	54
+Release:	55
 Copyright:	GPL
 Group:		X11/XFree86
 Group(pl):	X11/XFree86
