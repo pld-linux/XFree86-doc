@@ -8,7 +8,7 @@ Group:		X11/XFree86
 Group(pl):	X11/XFree86
 Source:		ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X400src-3.tgz
 Buildarch:	noarch
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Basic programmers documentation, many information about X-Window programming.
