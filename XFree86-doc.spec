@@ -14,8 +14,7 @@ Basic programmers documentation, many information about X-Window programming.
 In compressed PostScript format.
 
 %description -l pl
-Pakiet zawiera wiêkszo¶æ informacji niezbêdnych to rozpoczêcia programowania
-_pod_ X-y. 
+Pakiet zawiera wiêkszo¶æ informacji niezbêdnych to rozpoczêcia programowania _pod_ X-y. 
 Format: skompresowany PostScript
 
 %prep
