@@ -1,12 +1,12 @@
 Summary:	XFree86 Programmers documentation
 Summary(pl):	XFree86 Dokumentacja dla programistów
 Name:		XFree86-doc
-Version:	3.3.3.1
-Release:	55
+Version:	3.3.5
+Release:	17
 Copyright:	GPL
 Group:		X11/XFree86
 Group(pl):	X11/XFree86
-Source:		ftp://ftp.xfree86.org/pub/XFree86/3.3.3/source/X333src-3.tgz
+Source:		ftp://ftp.xfree86.org/pub/XFree86/3.3.5/source/X335src-3.tgz
 Buildarch:	noarch
 BuildRoot:	/tmp/%{name}-%{version}-root
 
@@ -15,8 +15,8 @@ Basic programmers documentation, many information about X-Window programming.
 In compressed PostScript format.
 
 %description -l pl
-Pakiet zawiera wiêkszo¶æ informacji niezbêdnych to rozpoczêcia programowania _pod_ X-y. 
-Format: skompresowany PostScript
+Pakiet zawiera wiêkszo¶æ informacji niezbêdnych to rozpoczêcia programowania
+apliakcji X Window. Format: skompresowany PostScript
 
 %prep
 %setup -q -c
