@@ -1,12 +1,12 @@
 Summary:	XFree86 Programmers documentation
 Summary(pl):	XFree86 Dokumentacja dla programistów
 Name:		XFree86-doc
-Version:	4.0
+Version:	4.0.1
 Release:	1
 License:	MIT
 Group:		X11/XFree86
 Group(pl):	X11/XFree86
-Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X400src-3.tgz
+Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X401src-3.tgz
 Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
