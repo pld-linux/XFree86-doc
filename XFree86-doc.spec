@@ -6,7 +6,7 @@ Release:	1
 License:	MIT
 Group:		X11/XFree86
 Group(pl):	X11/XFree86
-Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X401src-3.tgz
+Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X402src-3.tgz
 Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
