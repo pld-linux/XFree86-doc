@@ -2,7 +2,7 @@ Summary:	XFree86 Programmers documentation
 Summary(pl):	XFree86 Dokumentacja dla programistów
 Name:		XFree86-doc
 Version:	4.1.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/XFree86
 Group(de):	X11/XFree86
