@@ -7,7 +7,7 @@ Copyright:   GPL
 Group:       X11
 Source:      ftp://ftp.xfree86.org/pub/XFree86/3.3.3/source/X333src-3.tgz
 Buildarch:   noarch
-Buildroot:   /tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 Basic programmers documentation, many information about X-Window programming.
