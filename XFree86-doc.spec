@@ -7,7 +7,6 @@ Copyright:   GPL
 Group:       X11
 Source:      ftp://ftp.xfree86.org/pub/XFree86/3.3.3/source/X333src-3.tgz
 Buildarch:   noarch
-Autoreqprov: no
 Buildroot:   /tmp/%{name}-%{version}-root
 
 %description
@@ -37,6 +36,7 @@ cp -ar * $RPM_BUILD_ROOT/usr/doc/%{name}-%{version}
 %files
 %defattr(644, root, root, 755)
 %docdir /usr/doc/%{name}-%{version}
+%doc /usr/doc/%{name}-%{version}/*
 
 %changelog
 * Fri Dec 11 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
