@@ -33,7 +33,7 @@ cp -ar * $RPM_BUILD_ROOT/usr/doc/%{name}-%{version}
 %clean
 
 %files
-%defattr(644, root, root, 755)
+%defattr(644,root,root,755)
 %docdir /usr/doc/%{name}-%{version}
 %doc /usr/doc/%{name}-%{version}/*
 
