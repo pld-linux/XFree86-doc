@@ -5,8 +5,6 @@ Version:	4.1.0
 Release:	2
 License:	MIT
 Group:		X11/XFree86
-Group(de):	X11/XFree86
-Group(pl):	X11/XFree86
 Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X410src-3.tgz
 Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
