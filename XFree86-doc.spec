@@ -1,16 +1,13 @@
-
-%define		_sver %(echo %{version} | tr -d .)
-
 Summary:	XFree86 Programmers documentation
 Summary(pl):	XFree86 - dokumentacja dla programistów
 Name:		XFree86-doc
-Version:	4.3.0
+Version:	4.4.0
 Release:	1
 License:	MIT
 Group:		X11/XFree86
-# X%{_sver}src-6.tgz contains docs in other formats
-Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X%{_sver}src-7.tgz
-# Source0-md5:	e002e70f24098ca4f62fabd1c2809ed1
+# XFree86-%{version}-src-6.tgz contains docs in other formats
+Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/XFree86-%{version}-src-7.tgz
+# Source0-md5:	947a34279a0ca2da2f300719c583845e
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
