@@ -11,7 +11,7 @@ Group:		X11/XFree86
 # X%{_sver}src-6.tgz contains docs in other formats
 Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X%{_sver}src-7.tgz
 # Source0-md5:	e002e70f24098ca4f62fabd1c2809ed1
-Buildarch:	noarch
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
