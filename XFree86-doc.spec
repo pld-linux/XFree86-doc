@@ -6,7 +6,7 @@ Release:	1
 License:	MIT
 Group:		X11/XFree86
 Group(pl):	X11/XFree86
-Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X%{version}src-3.tgz
+Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X400src-3.tgz
 Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -19,7 +19,7 @@ programming. In compressed PostScript format.
 
 %description -l pl
 Pakiet zawiera wiêkszo¶æ informacji niezbêdnych to rozpoczêcia
-programowania apliakcji X Window. Format: skompresowany PostScript
+programowania apliakcji X Window. Format: skompresowany PostScript.
 
 %prep
 %setup -q -c
