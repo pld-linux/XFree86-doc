@@ -21,7 +21,7 @@ programming. In compressed PostScript format.
 
 %description -l pl
 Pakiet zawiera wiêkszo¶æ informacji niezbêdnych to rozpoczêcia
-programowania apliakcji X Window. Format: skompresowany PostScript.
+programowania aplikacji X Window. Format: skompresowany PostScript.
 
 %prep
 %setup -q -c
