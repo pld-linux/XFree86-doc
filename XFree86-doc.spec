@@ -3,20 +3,23 @@ Summary(pl):	XFree86 Dokumentacja dla programistów
 Name:		XFree86-doc
 Version:	4.0
 Release:	1
-Copyright:	GPL
+License:	MIT
 Group:		X11/XFree86
 Group(pl):	X11/XFree86
-Source:		ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X400src-3.tgz
+Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X%{version}src-3.tgz
 Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
+
 %description
-Basic programmers documentation, many information about X-Window programming.
-In compressed PostScript format.
+Basic programmers documentation, many information about X-Window
+programming. In compressed PostScript format.
 
 %description -l pl
-Pakiet zawiera wiêkszo¶æ informacji niezbêdnych to rozpoczêcia programowania
-apliakcji X Window. Format: skompresowany PostScript
+Pakiet zawiera wiêkszo¶æ informacji niezbêdnych to rozpoczêcia
+programowania apliakcji X Window. Format: skompresowany PostScript
 
 %prep
 %setup -q -c
