@@ -37,21 +37,3 @@ cp -ar * $RPM_BUILD_ROOT/%{_docdir}/%{name}-%{version}
 %defattr(644,root,root,755)
 %doc %dir %{_docdir}/%{name}-%{version}
 %doc %{_docdir}/%{name}-%{version}/*
-
-%changelog
-* Wed Jun 23 1999 Jan Rêkorajski <baggins@pld.org.pl>
-  [3.3.3.1-54]
-- FHS 2.0
-
-* Fri Dec 11 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [3.3.3-1]
-- added gzipping all docs,
-- /usr/doc/%%{name}-%%{version} marked as %docdir,
-- added "Autoreqprov: no",
-- "cp -ar" instead tar in %nstall.
-
-* Thu Dec 03 1998 Wojciech "Sas" Ciêciwa <cieciwa@alpha.zarz.agh.edu.pl>
-- separate documetation from main package.
-
-* Tue Dec 01 1998 Wojciech "Sas" Ciêciwa <cieciwa@alpha.zarz.agh.edu.pl>
-- building RPM.
