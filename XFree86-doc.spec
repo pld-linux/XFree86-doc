@@ -27,8 +27,8 @@ apliakcji X Window. Format: skompresowany PostScript
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/%{_docdir}/%{name}-%{version}/
 cd xc/doc/hardcopy
-find . -name \*.Z -exec compress -d {} \;
-find . -type f -exec gzip -9nf {} \;
+find . -name \*.PS -exec gzip -9nf {} \;
+find . -name \*.txt -exec gzip -9nf {} \;
 cp -ar * $RPM_BUILD_ROOT/%{_docdir}/%{name}-%{version}
 
 %clean
