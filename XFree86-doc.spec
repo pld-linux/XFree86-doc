@@ -2,13 +2,14 @@
 %define		_sver %(echo %{version} | tr -d .)
 
 Summary:	XFree86 Programmers documentation
-Summary(pl):	XFree86 Dokumentacja dla programistów
+Summary(pl):	XFree86 - dokumentacja dla programistów
 Name:		XFree86-doc
-Version:	4.2.0
-Release:	3
+Version:	4.3.0
+Release:	1
 License:	MIT
 Group:		X11/XFree86
-Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X%{_sver}src-3.tgz
+# X%{_sver}src-6.tgz contains docs in other formats
+Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/X%{_sver}src-7.tgz
 Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,6 +26,8 @@ programowania aplikacji X Window. Format: skompresowany PostScript.
 
 %prep
 %setup -q -c
+
+find . -name Imakefile | xargs rm -f
 
 %clean
 rm -rf $RPM_BUILD_ROOT
