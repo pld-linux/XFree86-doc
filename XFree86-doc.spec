@@ -1,12 +1,13 @@
-Summary:     XFree86 Programmers documentation
-Summary(pl): XFree86 Dokumentacja dla programistów
-Name:        XFree86-doc
-Version:     3.3.3
-Release:     1
-Copyright:   GPL
-Group:       X11
-Source:      ftp://ftp.xfree86.org/pub/XFree86/3.3.3/source/X333src-3.tgz
-Buildarch:   noarch
+Summary:	XFree86 Programmers documentation
+Summary(pl):	XFree86 Dokumentacja dla programistów
+Name:		XFree86-doc
+Version:	3.3.3.1
+Release:	54
+Copyright:	GPL
+Group:		X11/XFree86
+Group(pl):	X11/XFree86
+Source:		ftp://ftp.xfree86.org/pub/XFree86/3.3.3/source/X333src-3.tgz
+Buildarch:	noarch
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -24,20 +25,24 @@ Format: skompresowany PostScript
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/doc/%{name}-%{version}/
+install -d $RPM_BUILD_ROOT/%{_docdir}/%{name}-%{version}/
 cd xc/doc/hardcopy
 find . -name \*.Z -exec compress -d {} \;
 find . -type f -exec gzip -9nf {} \;
-cp -ar * $RPM_BUILD_ROOT/usr/doc/%{name}-%{version}
+cp -ar * $RPM_BUILD_ROOT/%{_docdir}/%{name}-%{version}
 
 %clean
 
 %files
 %defattr(644,root,root,755)
-%docdir /usr/doc/%{name}-%{version}
-%doc /usr/doc/%{name}-%{version}/*
+%doc %dir %{_docdir}/%{name}-%{version}
+%doc %{_docdir}/%{name}-%{version}/*
 
 %changelog
+* Wed Jun 23 1999 Jan Rêkorajski <baggins@pld.org.pl>
+  [3.3.3.1-54]
+- FHS 2.0
+
 * Fri Dec 11 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [3.3.3-1]
 - added gzipping all docs,
