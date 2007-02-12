@@ -1,5 +1,5 @@
 Summary:	XFree86 Programmers documentation
-Summary(pl):	XFree86 - dokumentacja dla programistów
+Summary(pl.UTF-8):   XFree86 - dokumentacja dla programistÃ³w
 Name:		XFree86-doc
 Version:	4.4.0
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Basic programmers documentation, many information about X-Window
 programming. In compressed PostScript format.
 
-%description -l pl
-Pakiet zawiera wiêkszo¶æ informacji niezbêdnych to rozpoczêcia
+%description -l pl.UTF-8
+Pakiet zawiera wiÄ™kszoÅ›Ä‡ informacji niezbÄ™dnych to rozpoczÄ™cia
 programowania aplikacji X Window. Format: skompresowany PostScript.
 
 %prep
