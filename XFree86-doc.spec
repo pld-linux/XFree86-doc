@@ -1,5 +1,5 @@
 Summary:	XFree86 Programmers documentation
-Summary(pl.UTF-8):   XFree86 - dokumentacja dla programistów
+Summary(pl.UTF-8):	XFree86 - dokumentacja dla programistów
 Name:		XFree86-doc
 Version:	4.4.0
 Release:	1
