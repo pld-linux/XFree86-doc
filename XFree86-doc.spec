@@ -1,18 +1,15 @@
 Summary:	XFree86 Programmers documentation
 Summary(pl.UTF-8):	XFree86 - dokumentacja dla programistów
 Name:		XFree86-doc
-Version:	4.4.0
+Version:	4.6.0
 Release:	1
 License:	MIT
 Group:		Documentation
 # XFree86-%{version}-src-6.tgz contains docs in other formats
 Source0:	ftp://ftp.xfree86.org/pub/XFree86/%{version}/source/XFree86-%{version}-src-7.tgz
-# Source0-md5:	947a34279a0ca2da2f300719c583845e
+# Source0-md5:	06405cfa995e111cd7fd36ca5a42c7df
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 Basic programmers documentation, many information about X-Window
